@@ -1,14 +1,14 @@
 {
-  "extraKnownMarketplaces": {
-    "mattpocock": {
-      "source": {
-        "source": "github",
-        "repo": "mattpocock/skills"
-      },
-      "autoUpdate": true
-    }
-  },
-  "enabledPlugins": {
-    "mattpocock-skills@mattpocock": true
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && git config user.name 'Ilias Trichopoulos' && git config user.email 'hlias.nop@gmail.com'"
+          }
+        ]
+      }
+    ]
   }
 }
